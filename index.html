@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  <title>Frontend Mentor | Página de destino do blog</title>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img
+      class="hero__img"
+      src="./images/bg-pattern-intro.svg"
+      alt="hero background"
+    />
+    <div class="hero__wrapper">
+      <header>
+        <nav>
+          <div class="hero__logo">
+            <a href=""><img src="./images/logo.svg" alt="Blogr logo" /></a>
+          </div>
+
+          <a href="#" class="hero__menu show-on-mobile">
+            <img src="./images/icon-hamburger.svg" alt="hamburger-icon" />
+          </a>
+
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#"
+                >Product
+                <img src="./images/icon-arrow-light.svg" alt="arrow" />
+              </a>
+              <ul class="dropdown">
+                <li class="dropdown__item"><a href="#">Visão geral</a></li>
+                <li class="dropdown__item"><a href="#">Preços</a></li>
+                <li class="dropdown__item"><a href="#">Mercado</a></li>
+                <li class="dropdown__item"><a href="#">Características</a></li>
+                <li class="dropdown__item"><a href="#">Integrações</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#"
+                >Company
+                <img src="./images/icon-arrow-light.svg" alt="arrow" />
+              </a>
+              <ul class="dropdown">
+                <li class="dropdown__item"><a href="#">Sobre</a></li>
+                <li class="dropdown__item"><a href="#">Equipe</a></li>
+                <li class="dropdown__item"><a href="#">Blog</a></li>
+                <li class="dropdown__item"><a href="#">Carreira</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#"
+                >Conectar <img src="./images/icon-arrow-light.svg" alt="arrow"
+              /></a>
+              <ul class="dropdown">
+                <li class="dropdown__item"><a href="#">Contato</a></li>
+                <li class="dropdown__item"><a href="#">Boletim de Notícias</a></li>
+                <li class="dropdown__item"><a href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="cta-buttons">
+            <a href="#" class="button button--transparent">Conecte-se</a>
+            <a href="#" class="button button--filled">Inscrever-se</a>
+          </div>
+        </nav>
+      </header>
+      <div class="primary-content">
+        <div class="hero__text">
+          <h1 class="hero__title">Uma plataforma de publicação moderna</h1>
+          <p class="hero__description">
+            Aumente seu público e construa sua marca online
+          </p>
+        </div>
+        <div class="hero__btn">
+          <a href="#" class="button button--filled"> Comece de graça </a>
+          <a href="#" class="button button--transparent">Saber mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile__menu">
+    <ul class="menu__items">
+      <li class="menu__item product">
+        <a href="#"
+          >Produtos <img src="./images/icon-arrow-dark.svg" alt="arrow"
+        /></a>
+        <ul class="submenu product-menu">
+          <li class="submenu__item"><a href="#">Visão geral</a></li>
+          <li class="submenu__item"><a href="#">Preços</a></li>
+          <li class="submenu__item"><a href="#">Mercado</a></li>
+          <li class="submenu__item"><a href="#">Características</a></li>
+          <li class="submenu__item"><a href="#">Integrações</a></li>
+        </ul>
+      </li>
+      <li class="menu__item company">
+        <a href="#"
+          >Companhia
+          <img src="./images/icon-arrow-dark.svg" alt="arrow" />
+        </a>
+        <ul class="submenu company-menu">
+          <li class="submenu__item"><a href="#">Sobre</a></li>
+          <li class="submenu__item"><a href="#">Equipe</a></li>
+          <li class="submenu__item"><a href="#">Blog</a></li>
+          <li class="submenu__item"><a href="#">Carreira</a></li>
+        </ul>
+      </li>
+      <li class="menu__item connect">
+        <a href="#"
+          >Conectar <img src="./images/icon-arrow-dark.svg" alt="arrow"
+        /></a>
+        <ul class="submenu connect-menu">
+          <li class="submenu__item"><a href="#">Contato</a></li>
+          <li class="submenu__item"><a href="#">Boletim de Notícias</a></li>
+          <li class="submenu__item"><a href="#">LinkedIn</a></li>
+        </ul>
+      </li>
+    </ul>
+    <hr />
+    <div class="menu__login">
+      <a href="#">Conecte-se</a>
+    </div>
+    <a href="#" class="button menu__button">Inscrever-se</a>
+  </div>
+  <section class="future">
+    <div class="future__wrapper">
+      <h2 class="future__title">Projetado para o futuro</h2>
+      <div class="future__img"></div>
+      <div class="future__infos">
+        <div class="future__info">
+          <h2 class="future__title">Apresentando um editor extensível</h2>
+          <p class="future__desc">
+            O Blogr possui uma interface extremamente intuitiva que permite que você
+             concentre-se em uma coisa: criar conteúdo. O editor suporta
+             gerenciamento de vários blogs e permite a fácil manipulação de
+             incorpora como imagens, vídeos e Markdown. Extensibilidade com
+             plugins e temas fornecem maneiras fáceis de adicionar funcionalidades ou
+             mudar a aparência de um blog.
+          </p>
+        </div>
+        <div class="future__info">
+          <h2 class="future__title">Gerenciamento de conteúdo robusto</h2>
+          <p class="future__desc">
+            O gerenciamento de conteúdo flexível permite que os usuários se movam facilmente
+             Postagens. Aumente a usabilidade do seu blog adicionando
+             categorias, seções, formato ou fluxo. Com esta funcionalidade,
+             você está no controle total.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="infrastructure">
+    <div class="infrastructure__wrapper">
+      <div class="floating-img">
+        <img
+          src="./images/illustration-phones.svg"
+          alt="phone illustration"
+        />
+      </div>
+      <div class="text">
+        <h2 class="infrastructure__title">Infraestrutura de última geração</h2>
+        <p class="infrastructure__desc">
+          Com confiabilidade e velocidade em mente, os data centers em todo o mundo fornecem
+           o backbone para conectividade ultrarrápida. Isso garante que seu site
+           carregará instantaneamente, não importa onde seus leitores estejam, mantendo seu
+           local competitivo.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="benefits">
+    <div class="benefits__wrapper">
+      <div class="benefits__img">
+        <img
+          src="./images/illustration-laptop-mobile.svg"
+          class="mobile"
+          alt="laptop illustration"
+        />
+        <img
+          src="./images/illustration-laptop-desktop.svg"
+          class="desktop"
+          alt="laptop illustration"
+        />
+      </div>
+      <div class="benefits__features">
+        <div class="benefits__feature">
+          <h2 class="benefits__title">Gratuito, aberto, simples</h2>
+          <p class="benefits__desc">
+            O Blogr é um aplicativo gratuito e de código aberto apoiado por uma grande
+             comunidade de desenvolvedores úteis. Ele suporta recursos como código
+             realce de sintaxe, feeds RSS, integração de mídia social,
+             ferramentas de comentários de terceiros e funciona perfeitamente com o Google
+             Análise. A arquitetura é limpa e é relativamente fácil de
+             aprender.
+          </p>
+        </div>
+        <div class="benefits__feature">
+          <h2 class="benefits__title">Ferramentas poderosas</h2>
+          <p class="benefits__desc">
+            Baterias incluídas. Construímos uma ferramenta CLI simples e direta
+             que facilita a personalização e a implantação, mas capaz de
+             produzindo até os sites mais complicados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <div class="footer__links">
+        <h2 class="footer__links--title">Produtos</h2>
+        <a href="#" class="footer__link">Visão geral</a>
+        <a href="#" class="footer__link">Preços</a>
+        <a href="#" class="footer__link">Mercado</a>
+        <a href="#" class="footer__link">Características</a>
+        <a href="#" class="footer__link">Integrações</a>
+      </div>
+      <div class="footer__links">
+        <h2 class="footer__links--title">Companhia</h2>
+        <a href="#" class="footer__link">Sobre</a>
+        <a href="#" class="footer__link">Equipe</a>
+        <a href="#" class="footer__link">Blog</a>
+        <a href="#" class="footer__link">Carreiras</a>
+      </div>
+      <div class="footer__links">
+        <h2 class="footer__links--title">Conectar</h2>
+        <a href="#" class="footer__link">Contato</a>
+        <a href="#" class="footer__link">Boletim de Notícias</a>
+        <a href="#" class="footer__link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./App/js/scripts.js"></script>
+</body>
+</html>
